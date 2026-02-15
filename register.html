@@ -10,6 +10,7 @@
     <div class="wrapper">
         <form action="#">
             <h2>Register</h2>
+            <div class="msg"></div>
             <div class="input-field">
                 <input type="text" id="text" required>
                 <label for="first-name">Enter Your First Name</label>
@@ -19,14 +20,14 @@
                 <label for="last-name">Enter Your Last Name</label>
             </div>
              <div class="input-field">
-                <input type="email" id="email" required>
+                <input type="email" oninput="registerValidation()" id="email" required>
                 <label for="email">Enter Your Email</label>
             </div>
              <div class="input-field">
-                <input type="password" id="password" required>
+                <input type="password" oninput="registerValidation()" id="password" required>
                 <label for="password">Enter Your Password</label>
             </div>
-            <button type="submit">Register</button>
+            <button type="submit" id="btn">Register</button>
             <div class="register">
                 <p>I already have an account <a href="index.html">loging</a></p>
             </div>
