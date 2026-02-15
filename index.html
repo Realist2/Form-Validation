@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <h2>Login</h2>
+             <div class="msg"></div> 
+            <div class="input-field">
+                <input type="email" oninput="validInput()" id="email" required>
+                <label for="email">Enter Your Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" oninput="validInput()" id="password" required>
+                <label for="password">Enter Your password</label>
+            </div>
+            <div class="forget">
+                <label for="forget">
+                    <input type="checkbox" id="remeber">
+                    <p>Remember me</p>
+                </label>
+                <a href="forget.html">Forgot password</a>
+            </div>
+            <button type="submit" id="btn">Log in</button>
+            <div class="register">
+                <p>Don't have an acount <a href="register.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
