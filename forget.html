@@ -10,11 +10,12 @@
     <div class="wrapper">
         <form action="#">
             <h2>Forgot Password</h2>
+            <div class="msg"></div>
             <div class="input-field">
-                <input type="email" id="email" required>
+                <input type="email"  oninput="emailValidation()" id="email" required>
                 <label for="email">Enter Your Email</label>
             </div>
-            <button type="submit">Reset password</button>
+            <button type="submit" class="btn">Reset password</button>
             <div class="register">
                 <p>Don't have an acount <a href="register.html">Register</a></p>
             </div>
